@@ -1,0 +1,95 @@
+.movie-list-container-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden; /* Prevents content overflow */
+}
+/* Home category - horizontal layout */
+.movie-list-container.horizontal {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping, ensure movie cards stay in one row */
+    gap: 20px;
+    overflow-x: auto; /* Horizontal scrolling */
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%; /* Ensure the container takes full width */
+}
+/* Other categories - grid layout */
+.movie-list-container.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    overflow: hidden; /* No scrollbar */
+}
+/* Movie card styling */
+.movie-card {
+    width: 100%; /* Let the card take up the full column */
+    height: 450px; /* Fixed height for the cards */
+    cursor: pointer;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+/* Image size adjustment for the movie poster */
+.movie-card .card-img-top {
+    height: 350px;
+    object-fit: cover;
+}
+/* Hide scrollbar for horizontal scrolling (only for Home category) */
+.movie-list-container::-webkit-scrollbar {
+    display: none;
+}
+/* Scroll arrows for Home category */
+.scroll-arrow {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    z-index: 1; /* Ensure it's on top of the movie list */
+}
+.scroll-arrow.left {
+    left: 10px;
+}
+.scroll-arrow.right {
+    right: 10px;
+}
+/* Arrow icon styling */
+.scroll-arrow.left::before,
+.scroll-arrow.right::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-style: solid;
+    width: 0;
+    height: 0;
+}
+.scroll-arrow.left::before {
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #000 transparent transparent;
+}
+.scroll-arrow.right::before {
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #000;
+}
+/* Arrow hover effect */
+.scroll-arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+.category-heading{
+    position: relative;
+    z-index: 10; /* Ensure h2 is above other content */
+    margin-top: 80px; /* Optional: Add top margin to avoid overlap with navbar */
+    margin-left: 20px;
+    color: rgb(8, 8, 8);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+}

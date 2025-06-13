@@ -1,0 +1,10 @@
+.section{
+    position: relative;
+    z-index: 10; /* Ensure h2 is above other content */
+    margin-top: 100px; /* Optional: Add top margin to avoid overlap with navbar */
+    margin-left: 20px;
+    color: rgb(8, 8, 8);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+}
