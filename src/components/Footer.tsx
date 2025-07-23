@@ -9,13 +9,13 @@ const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <h2>CineScope</h2>
+        <h2>CineDuniya</h2>
         <div className="social-links">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div><br/>
-        <p>&copy; {new Date().getFullYear()}, CineScope.com, Inc. or its affiliates</p>      
+        <p>&copy; {new Date().getFullYear()}, CineDuniya.com, Inc. or its affiliates</p>      
       </div>
     </footer>
   );
