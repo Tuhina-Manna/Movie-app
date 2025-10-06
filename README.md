@@ -27,9 +27,21 @@ It fetches real-time movie data from **TMDB API**, allowing users to search, exp
 
 Screenshots
 
-Main page: [screenshots/homepage.jpg]
+Main Page: [click here](screenshots/homepage.jpg)
 
+Trending Movie List: [click here](screenshots/trending.jpg)
 
+Popular Movie List: [click here](screenshots/popular.jpg)
+
+Upcoming Movie List: [click here](screenshots/upcoming.jpg)
+
+Top Rated Movie List: [click here](screenshots/toprated.jpg)
+
+After Searching: [click here](screenshots/search.jpg)
+
+Movie Details: [click here](screenshots/details.jpg)
+
+Footer: [click here](screenshots/footer.jpg)
 
 ---
 
