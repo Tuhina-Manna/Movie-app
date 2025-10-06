@@ -25,6 +25,14 @@ It fetches real-time movie data from **TMDB API**, allowing users to search, exp
 
 ---
 
+Screenshots
+
+Main page: [screenshots/homepage.jpg]
+
+
+
+---
+
 👤 Author
 
 Created by Tuhina Manna
